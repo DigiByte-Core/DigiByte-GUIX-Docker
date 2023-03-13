@@ -34,7 +34,7 @@ export PATH_TO_SDK_TARBALL=/path/to/Xcode-12.2-12B45b-extracted-SDK-with-libcxx-
 After you have created the image, run the following command:
 
 ```bash
-docker run -it --name alpine-guix --privileged alpine-guix -v "$PATH_TO_SDK_TARBALL":/xcode.tar
+docker run -it --name alpine-guix --privileged -v "$PATH_TO_SDK_TARBALL:/xcode.tar" alpine-guix
 ```
 
 This command will lead you straight into the `digibyte` directory in that container.
