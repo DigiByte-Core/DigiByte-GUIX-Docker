@@ -60,3 +60,19 @@ From within the docker container, run:
 ```bash
 ./contrib/guix/guix-build
 ```
+
+## Attesting the release
+
+```bash
+# Clone the repositories
+git clone https://github.com/DigiByte-Core/guix.sigs.git
+git clone https://github.com/DigiByte-Core/digibyte-detached-sigs.git
+
+# Replace `yoshijaeger` with your gpg name
+export DGB_SIGNER="yoshijaeger"
+
+# Set the path (no need to modify anything here if you cloned the repos as mentioned above)
+export DGB_DETACHED_SIGS_REPO="$(pwd)/digibyte-detached-sigs" 
+
+env GUIX_SIGS_REPO="$DGB_DETACHED_SIGS_REPO" SIGNER="$DGB_SIGNER" ./contrib/guix/guix-attest
+```
