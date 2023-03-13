@@ -24,6 +24,8 @@ DOCKER_BUILDKIT=1 docker build --pull --no-cache -t alpine-guix --build-arg bran
 ```
 
 ## Run the docker image
+Open another shell and perform the following steps:
+
 Set the path of the Xcode12.2 SDK
 ```bash
 export PATH_TO_SDK_TARBALL=/path/to/Xcode-12.2-12B45b-extracted-SDK-with-libcxx-headers.tar.gz
@@ -32,7 +34,7 @@ export PATH_TO_SDK_TARBALL=/path/to/Xcode-12.2-12B45b-extracted-SDK-with-libcxx-
 After you have created the image, run the following command:
 
 ```bash
-docker run -it --name alpine-guix --privileged alpine-guix -v "$PATH_TO_SDK_TARBALL">:/xcode.tar
+docker run -it --name alpine-guix --privileged alpine-guix -v "$PATH_TO_SDK_TARBALL":/xcode.tar
 ```
 
 This command will lead you straight into the `digibyte` directory in that container.
