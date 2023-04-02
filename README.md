@@ -13,7 +13,7 @@ https://github.com/DigiByte-Core/DigiByte-GUIX-Docker.git && cd DigiByte-GUIX-Do
 ## Create a docker image
 ```bash
 # Use the following command to build the docker image
-DOCKER_BUILDKIT=1 docker build --pull --no-cache -t alpine-guix --build-arg branch=release/8.22-rc1 - < Dockerfile
+DOCKER_BUILDKIT=1 docker build --pull --no-cache -t alpine-guix --build-arg branch=release/v8.22-rc1 - < Dockerfile
 ```
 
 Note that the most recent changes are still in the branch `fix/functional-and-guix` so replace the branch build-arg with:
