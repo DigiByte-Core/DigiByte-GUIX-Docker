@@ -6,7 +6,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     curl \
     git \
     guix \
-    make
+    make \
+    gpg && rm -rf /var/lib/apt/lists/*
 
 ARG builder_count=32
 ARG branch=develop
