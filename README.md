@@ -1,7 +1,16 @@
 # Build DigiByte Core using GUIX and Docker
 
 ## Prerequisites
-Install docker on your machine.
+- Ubuntu or Mac without Silicon Chip
+- RAM: 8 GB
+- Free disk space: 60 GB
+- Github Account
+- docker installed on your machine
+- Ideally some knowledge on how build environments work
+
+> **Warning**
+> For this release you cannot use Macs with M1/M2 CPUs.
+> Support will be added in a future release though!
 
 ## Install
 Clone the repository using
