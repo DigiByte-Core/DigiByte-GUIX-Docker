@@ -71,7 +71,7 @@ From within the docker container, run:
 export VERSION="8.22-rc1"
 
 # Make sure you are on the correct branch
-git checkout origin "v${VERSION}"
+git checkout "origin/release/v${VERSION}"
 
 # Start the build process
 ./contrib/guix/guix-build
