@@ -16,7 +16,7 @@
 Clone the repository using
 
 ```bash
-https://github.com/DigiByte-Core/DigiByte-GUIX-Docker.git && cd DigiByte-GUIX-Docker
+git clone https://github.com/DigiByte-Core/DigiByte-GUIX-Docker.git && cd DigiByte-GUIX-Docker
 ```
 
 ## Create a docker image
